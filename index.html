@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div>
+        <h1>Identificador de numeros pares e impares</h1>
+        Escreva seu numero: <input type="number" name="eita" id="eita" value="" />
+        <input type="button" name="clica" id="" value="click" onclick="clica()"/>
+        </div>
+        <div id="res">
+            Resultado
+        </div>
+        <script>
+            function clica(){
+                var tn1 = window.document.getElementById('eita')
+                var res = window.document.getElementById('res')
+                var aa = Number (tn1.value)
+                if (aa % 2 === 0){
+                    res.innerHTML = "Seu numero é par"
+                }else{
+                    res.innerHTML = "Seu numero é impar"
+                }
+            }
+        </script>
+    </body>
